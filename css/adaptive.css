@@ -1,0 +1,39 @@
+@media (min-width: 361px) and (max-width: 426px) {
+  .user-fio {
+    font-size: 21px;
+  }
+
+  .user-job {
+    font-size: 15px;
+  }
+
+  .score > h3 {
+    font-size: 15px;
+  }
+
+  .score > span {
+    font-size: 21px;
+  }
+
+  .menu-item > h4 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  .score:nth-child(2) {
+    padding: 0 20px 10px;
+  }
+
+  .header__months {
+    margin-left: 20px;
+  }
+
+  .user-fio {
+    font-size: 15px;
+  }
+
+  .menu-item {
+    padding-bottom: 7px;
+  }
+}

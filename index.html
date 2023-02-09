@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Задача веб</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/adaptive.css" />
+  </head>
+  <body>
+    <header class="header">
+      <article class="header__control-panel flex">
+        <div class="header__months flex">
+          <button
+            class="header__arrow left-arrow"
+            id="left-arrow"
+            type="button"
+          >
+            <img src="img/header/arrow.svg" alt="left arrow" />
+          </button>
+          <span class="selected-month">Апрель 2021 г.</span>
+          <button
+            class="header__arrow right-arrow"
+            id="right-arrow"
+            type="button"
+          >
+            <img src="img/header/arrow.svg" alt="right arrow" />
+          </button>
+        </div>
+        <button class="header-btn slide-down" id="slide-down">
+          <img src="img/header/slide_down.svg" alt="slide down" />
+        </button>
+        <button class="header-btn" id="user-btn">
+          <img src="img/header/user.svg" alt="user button" />
+        </button>
+      </article>
+      <article class="header__current-user flex">
+        <img
+          class="user-photo"
+          src="img/header/user_photo.png"
+          alt="user photo"
+        />
+        <div class="user-info">
+          <span class="user-fio">Лимаренко Александр Валерьевич</span>
+          <span class="user-job">Программист 1С</span>
+        </div>
+      </article>
+    </header>
+    <main class="main-content">
+      <section class="main-content__scores flex">
+        <div class="score">
+          <h3>Норматив</h3>
+          <span>100%</span>
+        </div>
+        <div class="score">
+          <h3>Результат</h3>
+          <span class="good" id="user-result">102,5%</span>
+        </div>
+        <div class="score">
+          <h3>Премия</h3>
+          <span class="award">77330Р</span>
+        </div>
+      </section>
+      <section class="main-content__menu">
+        <a href="#" class="menu-item">
+          <img src="img/main-content/career.svg" alt="career" />
+          <h4>Карта целей</h4>
+        </a>
+        <a href="#" class="menu-item">
+          <img src="img/main-content/tasks.svg" alt="tasks" />
+          <h4>SMART Задачи</h4>
+        </a>
+        <a href="#" class="menu-item">
+          <img src="img/main-content/data_analysis.svg" alt="data analysis" />
+          <h4>Оценки</h4>
+        </a>
+        <a href="#" class="menu-item">
+          <img src="img/main-content/tasks_2.svg" alt="tasks 2" />
+          <h4>Сообщения</h4>
+        </a>
+        <a class="menu-item">
+          <img src="img/main-content/monitor.svg" alt="monitor" />
+          <h4>Отчеты</h4>
+        </a>
+        <a class="menu-item">
+          <img src="img/main-content/wallet.svg" alt="wallet" />
+          <h4>Премия</h4>
+        </a>
+      </section>
+      <section class="main-content__current-status">
+        <div class="status-header-block flex">
+          <h4>Текущий статус</h4>
+          <a class="working" id="status-link" href="#">Работаю</a>
+        </div>
+        <div class="hours">
+          <div class="hours__scales flex">
+            <div class="plan-scale"></div>
+            <div class="fact-scale"></div>
+          </div>
+          <div class="hours__legend flex">
+            <span class="plan-legend" data-value="176">план: 176ч.</span>
+            <span class="fact-legend" data-value="100">факт: 100ч.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
